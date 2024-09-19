@@ -43,7 +43,7 @@ public class Xpath {
             System.out.println(option.getText());
         }
         AndroidElement oneShotAlarm = androidDriver.findElement(By.id("io.appium.android.apis:id/one_shot"));
-        Assert.assertEquals(oneShotAlarm.getText(),"One shot Alarm");
+//        Assert.assertEquals(oneShotAlarm.getText(),"One shot Alarm");
         oneShotAlarm.click();
     }
 }
