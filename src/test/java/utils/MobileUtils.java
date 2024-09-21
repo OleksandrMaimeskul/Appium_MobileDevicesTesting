@@ -47,8 +47,9 @@ public class MobileUtils {
         touchAction.longPress(LongPressOptions.longPressOptions()
                 .withElement(ElementOption.element(androidElement)).withDuration(Duration.ofSeconds(second))).perform();
     }
-    public static  AndroidElement scroll(AndroidDriver<AndroidElement>androidDriver,String textLocator){
-        return         androidDriver.findElementByAndroidUIAutomator(
-                STR."new UiScrollable(new UiSelector()).scrollIntoView(text(\"\{textLocator}\"))");
+    public static AndroidElement scroll(AndroidDriver<AndroidElement> androidDriver, String textLocator) {
+        return androidDriver.findElementByAndroidUIAutomator(
+                "new UiScrollable(new UiSelector()).scrollIntoView(new UiSelector().text(\"" + textLocator + "\"))");
     }
+
 }

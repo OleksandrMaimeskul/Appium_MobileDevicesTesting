@@ -71,7 +71,7 @@ public class TabActions {
                 System.out.println(eachName.getText());
             }
         }
-        MobileUtils.longPress(androidDriver, allNames.getLast(), 3);
+//        MobileUtils.longPress(androidDriver, allNames.getLast(), 3);
         AndroidElement option = androidDriver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Sample menu\"]"));
         Assert.assertTrue(option.isDisplayed());
     }
